@@ -1,0 +1,22 @@
+01_04_01.jsx
+01_04_02.jsx
+01_04_03.jsx
+
+Avoid propdrilling
+
+
+Solution 1
+*   Avoid breaking up your components. 
+*   How much data needs to be shared at the child level?
+*   If you're using only one grandhild component consider passing down the whole [rendered] component as a prop.
+
+Solution 2
+Context API
+*   For small apps, to avoid propdrilling.
+*   Is a way to broadcast data to components.
+*   Uses "provider" components and "consumer" components
+*   Is like passing a note: from person to person, or ball up & throw across the room to final recipient.
+* Can't use Context to communicate state between components, but can use hooks to do so. 
+
+Solution 3
+Redux
